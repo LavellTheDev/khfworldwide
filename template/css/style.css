@@ -65,8 +65,31 @@ body {
 	margin: auto;
 }
 
-header {
-
+ nav ul li {
+  display: inline;
+  font-size: 2em;
+  margin: 0 0 0 1%;
+  width: 100%;
+}
+h1{
+  text-align: center;
+}
+.imageCarousel{
+  border: 1px solid black;
+  height: auto;
+  margin: 4em auto;
+  width: 80%;
+}
+.rotatingImage{
+  height: auto;
+  margin: auto;
+  width: 100%;
+}
+.aboutKHF{
+  border: 1px solid black;
+  height: 250px;
+  margin: auto;
+  width: 45%;
 }
 
 footer {
