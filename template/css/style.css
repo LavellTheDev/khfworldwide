@@ -46,8 +46,17 @@ Date (completed):
 /*******************************************/
 /* BASE STYLES
 /*******************************************/
+*{
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+
+}
 
 body {
+     background-color: #000;
+     background-image: url("../image/skate1.png");
+     background-repeat: no-repeat;
      color: #000;
      font-size: 12px;
      line-height: 1.4;
@@ -65,36 +74,104 @@ body {
 	margin: auto;
 }
 
- nav ul li {
-  display: inline;
-  font-size: 2em;
-  margin: 0 0 0 1%;
-  width: 100%;
-}
-h1{
+.container{
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
 }
-.imageCarousel{
-  border: 1px solid black;
-  height: auto;
-  margin: 4em auto;
-  width: 80%;
+
+.container span{
+  text-transform: uppercase;
+  display: block;
 }
-.rotatingImage{
-  height: auto;
-  margin: auto;
+
+.text1{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+  background: black;
+  position: relative;
+  animation: text 3s 1;
+
+}
+
+.text2{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.red:hover{
+  color: red;
   width: 100%;
 }
-.aboutKHF{
-  border: 1px solid black;
-  height: 250px;
-  margin: auto;
-  width: 45%;
+
+.blue:hover{
+  color: blue;
+  width: 100%;
+}
+.green:hover{
+  color: green;
+  width: 100%;
+}
+.text1 > span{
+  display: inline;
+}
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+30%{
+  letter-spacing: 0.2rem;
+  margin-bottom: -40px;
+}
+}
+
+.khfInfo{
+  border: 3px solid black;
+  background-color: #222222;
+  height: auto;
+  width: 24%;
+  position: absolute;
+  top: 60%;
+  left: 38%;
+  animation: fade 3s 1;
+}
+p{
+  color: white;
+  opacity: 1;
+  font-weight: 600;
+  width: auto;
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+}
+p > span{
+  font-weight: bold;
+  color: red;
+}
+header {
+
 }
 
 footer {
 
 }
+
 
 /*******************************************/
 /* ADDITIONAL STYLES
@@ -131,7 +208,10 @@ footer {
   ##Screen = B/w 1025px to 1280px
 */
 @media (min-width: 1025px) and (max-width: 1280px) {
-
+  .text1{
+    color: red;
+    font-size: 4rem;
+  }
 }
 
 
